@@ -1,0 +1,40 @@
+{
+  "pluginAlias": "SensePowerMeter",
+  "pluginType": "accessory",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "title": "Email Address",
+        "type": "string",
+        "required": true,
+        "default": "joe@email.com"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true,
+        "default": "$up3r$3cr37"
+      },
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Sense Energy Meter"
+      },
+      "pollingInterval": {
+        "title": "Update Interval",
+        "type": "number",
+        "required": true,
+        "default": 60
+      },
+      "verbose": {
+        "title": "Verbose Sense API Output",
+        "type": "boolean",
+        "required": false,
+        "default": false
+      }
+    }
+  }
+}
